@@ -36,6 +36,9 @@ p {
     height: 50px;
     margin-top: 10px;
 }
+.img-weather-main{
+    width: 50px;
+}
 .card-title{
     text-align: center;
     padding: 10px;

@@ -39,7 +39,7 @@ const Weather = () => {
     }, [add]);
 
     const fetchData = async () => {
-        const APIKEY = "8ba77e856b1563aa404795602d6c9abb";
+        const APIKEY = "{YOUR-APIKEY}";
         setLoading(true);
         try {
             const response = await axios.get(
@@ -143,7 +143,7 @@ const Weather = () => {
                                     <p>Temperature: <strong>{formatTemperature(firstDayData.main.temp)}°C</strong></p>
                                     <p>Description: <strong>{firstDayData.weather[0].description}</strong></p>
                                 </Col>
-                                <Col className='col-4'><img src={urlImg + firstDayData.weather[0].icon + ".png"} alt="meteo" /></Col>
+                                <Col className='col-4'><img src={urlImg + firstDayData.weather[0].icon + ".png"} alt="meteo" className='img-weather-main' /></Col>
                             
                         </Row>
                     ))}
