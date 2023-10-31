@@ -4,7 +4,7 @@ import Weather from './Weather';
 const App = () => {
   return (
     <div>
-      <h1>Weather Forecast App</h1>
+      <h1>Application Météo</h1>
       <Weather />
     </div>
   );
